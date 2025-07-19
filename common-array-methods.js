@@ -23,12 +23,26 @@ console.log(orderSystem[1][1]);
 
 //Task 4: Access Orders Dynamically with Variables
 
-let row;
-let item;
-for (let row = 0; row < 1; row++) {
-    for (let item = 0; item < orderSystem[row].length; item++) {
-        console.log(orderSystem[row][item]);
-    }
+let row, item;
+
+row = 0; item = 0;
+console.log(orderSystem[row][item]);
+row = 0; item = 1;
+console.log(orderSystem[row][item]);
+row = 0; item = 2;
+console.log(orderSystem[row][item]);
+
+row = 1; item = 0;
+console.log(orderSystem[row][item]);
+row = 1; item = 1;
+console.log(orderSystem[row][item]);
+row = 1; item = 2;
+console.log(orderSystem[row][item]);
+
+//Task 5: Write a loop that logs all the items in the drink category, ensuring the loop dynamically adjusts to the number of items using .length.
+
+for (let item = 0; item < orderSystem[0].length; item++) {
+    console.log(orderSystem[0][item]);
 };
 
 //Task 6: Add a New Order & Track Length
